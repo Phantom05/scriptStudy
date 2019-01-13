@@ -1,0 +1,195 @@
+*{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.slide_box{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  overflow: hidden;
+}
+.list_ul{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 500%;height: 100%;
+  background: black;
+  -webkit-animation: slide 15s 1s infinite;
+          animation: slide 15s 1s infinite;
+}
+.list_box{
+  border: 1px solid blue;
+  float: left;
+  width: calc(100% / 5);
+  color: #fff;
+}
+@-webkit-keyframes slide{
+  0%{
+    left: 0%;
+  }
+  20%{
+    left: -100%;
+  }
+  40%{
+    left: -200%;
+  }
+  60%{
+    left: -300%;
+  }
+  80%{
+    left: -400%;
+  }
+  0%{
+    left: 0%;;
+  }
+}
+@keyframes slide{
+  0%{
+    left: 0%;
+  }
+  20%{
+    left: -100%;
+  }
+  40%{
+    left: -200%;
+  }
+  60%{
+    left: -300%;
+  }
+  80%{
+    left: -400%;
+  }
+  0%{
+    left: 0%;;
+  }
+}
+
+
+.slide2_box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+}
+.slide2_btL{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  
+}
+.slide2_btR{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right : 10px;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+
+.slide2_ul{
+  position: relative;
+  width: 500%;
+  height: 100%;
+  border: 1px solid blue;
+}
+.slide2_list{
+  width: 20%;
+  float: left;
+  border: 1px solid orange;
+}
+
+
+
+
+.slide3 {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 50%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slideUl {
+  position: absolute;
+  width: 500%;
+  height: 100%;
+}
+
+.slideList{
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+
+.s1 {
+  background: red;
+}
+
+.s2 {
+  background: orange;
+}
+
+.s3 {
+  background: blue;
+}
+
+.s4 {
+  background: purple;
+}
+
+.s5 {
+  background: green;
+}
+
+.pbbox {
+  text-align: center;
+}
+.pbbox button{
+  cursor:pointer;
+}
+.multiText{
+  width: 200px;
+  font-weight: bold;
+  font-size: 22px;
+  color: red;
+  overflow: hidden;
+  white-space: normal;
+  line-height: 1.2;
+  height: 52px;
+  text-align: left;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+
+// showcase
+%cfloat{
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.showHide{
+  display: none;
+}
+.showShow{
+  display: block;
+}
+.showcase_bt_box_ul{
+  @extend %cfloat;
+}
