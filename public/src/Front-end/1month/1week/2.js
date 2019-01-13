@@ -151,10 +151,6 @@ let ttt2 ="Wow, Fantastic Baby!";
 console.log(ttt2.substring(5,10));
 console.log(ttt2);
 
-let abc  ='ab4wrgdfhdfhcvhjvkhvjhvjhkhvkh';
-abc[abc.length-1]
-
-console.log(abc.length -5)
 
 
 
