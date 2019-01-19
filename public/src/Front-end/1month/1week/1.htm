@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
+
 <body>
   <div id="demo"></div>
   <button onclick="this.innerHTML = Date()">The time is?</button>
   <div id="res1"></div>
   <div id="res2"></div>
   <div id="res3"></div>
-<button onclick="getAbc()">야호</button>
-<input type="text" onchange="console.log(this.value)">
-<input type="text" onkeydown="console.log(this.value)">
-<button onmouseover="this.textContent = '마우스 오버'" onmouseout ="this.textContent='마우스를 올려보세요'">마우스를 올려보세요</button>
-  <!-- <script src="./1.js"></script> -->
-
+  <button onclick="getAbc()">야호</button>
+  <input type="text" onchange="console.log(this.value)">
+  <input type="text" onkeydown="console.log(this.value)">
+  <button onmouseover="this.textContent = '마우스 오버'" onmouseout="this.textContent='마우스를 올려보세요'">마우스를 올려보세요</button>
   <div id="demoa"></div>
- 
+
   <!-- 하루 30분 운동. -->
-<form action="" id="bbForm">
-  <input type="text" id="ggValue">
-  <input type="submit" value="요술" id="ggBt">
-</form>
-  <div id="ggRes">
+  <form action="" id="bbForm" onsubmit="ggFunc()">
+    <input type="text" id="ggValue">
+    <input type="submit" value="요술" id="ggBt">
+  </form>
 
-  </div>
-
+  <div id="ggRes"></div>
+  <!-- <script src="./1.js"></script> -->
   <script src="./2.js"></script>
 </body>
+
 </html>

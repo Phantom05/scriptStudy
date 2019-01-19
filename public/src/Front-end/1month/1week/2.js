@@ -296,13 +296,12 @@ do{
 
 console.clear();
 
-
 var g = 0;
 while(g < 30){  
   // if(g <= 0) continue;
   console.log('g',g);
   g+=3;
-}
+};
 
 document.getElementById('bbForm').addEventListener('click',function(e){
   e.preventDefault();
@@ -313,7 +312,8 @@ document.getElementById('ggBt').addEventListener('click',function(){
   var res = document.getElementById('ggRes');
   res.innerHTML ='';
   for(var i = 0 ; i < 10; i ++){
-    if(i <2) continue;
-    res.innerHTML +=`</p>${dan} x ${i} = ${dan*i}</p>`
-  }
+    if(i <1) continue;
+    res.innerHTML +=`</p>${dan} x ${i} = ${dan*i}</p>`;
+  };
 });
+
