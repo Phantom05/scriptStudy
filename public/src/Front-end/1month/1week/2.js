@@ -317,3 +317,41 @@ document.getElementById('ggBt').addEventListener('click',function(){
   };
 });
 
+console.clear();
+
+var abc = [1,2,3,4,5];
+console.log(
+  abc.filter(x=>{
+    return x%2 ==0
+  })
+)
+
+console.log(
+  abc.reduceRight((x,y)=>{
+    return x+y
+  })
+)
+
+console.log(
+  abc.every(x=>x>3)
+)
+
+console.log(
+  abc.find(x=> x>2)
+)
+
+
+for(let i =1; i <=10; i++){
+  console.group(`${i}`)
+    for(let j = 0 ;j < 1; j++){
+      console.group(`${i-1}`);
+        for(let k = 0 ; k <1 ; k ++){
+          console.group(`${i-2}`)
+          console.groupEnd()
+        }
+      console.groupEnd();
+    }
+  console.groupEnd()
+}
+
+console.clear();
