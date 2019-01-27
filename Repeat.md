@@ -32,6 +32,8 @@
 >**3주차**
 + 26.배열, forEach, join, splice, concat, slice, reverce
 + 27.배열 join,toString, forEach, map, filter, every,some, reduce, reduceRight, indexOf
++ 28.야구 게임 만들어보기
++ 29.로또 추출기 만들기
 
 
 이터레이터, 함수호출, 클러스터 사용, 웹소켓 사용
