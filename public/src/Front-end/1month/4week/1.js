@@ -1,56 +1,56 @@
-var arr = ['야호','등산','바다','트래킹'];
+var arr = ['야호', '등산', '바다', '트래킹'];
 console.log(
   arr.join(' ! ')
 )
-arr.splice(2,1);
+arr.splice(2, 1);
 console.log(
   arr
 )
 
 let list = document.getElementById('list');
-let customer=['철수','영희','짱구','멩구','피콜로'];
+let customer = ['철수', '영희', '짱구', '멩구', '피콜로'];
 
 
 
-customer.forEach((x,y,z)=>{
+customer.forEach((x, y, z) => {
   console.log(x)
   console.log(y)
   console.log(z)
 })
 
 console.clear();
-let tnum = [1,2,3,4,5];
+let tnum = [1, 2, 3, 4, 5];
 
 console.log(
-  tnum.map((x)=>{
-    return x*5
+  tnum.map((x) => {
+    return x * 5
   })
 )
 console.clear();
 
 console.log(
-  tnum.filter((x)=>{
-    return x>3
+  tnum.filter((x) => {
+    return x > 3
   })
 )
 
-let reduceArr = [2,5,7,2,3,3];
+let reduceArr = [2, 5, 7, 2, 3, 3];
 
 console.log(
-  reduceArr.reduce((x,y)=> {
-    return x+y;
+  reduceArr.reduce((x, y) => {
+    return x + y;
   })
 )
 
-let evenyArr = [1,2,3,4,5];
+let evenyArr = [1, 2, 3, 4, 5];
 
 console.log(
-  evenyArr.every((x)=>{
-    return x>0
+  evenyArr.every((x) => {
+    return x > 0
   })
 )
 
-let indexOfArr = ['Apple','Samsung','피카츄'];
+let indexOfArr = ['Apple', 'Samsung', '피카츄'];
 
 console.log(
   indexOfArr.indexOf('apple')
@@ -62,7 +62,7 @@ console.log(
 //   let date = new Date().getTime();
 
 //   let count = new Date(selectDate - date);
-  
+
 
 //   // let years = date.getFullYear();
 //   // let month = date.getMonth()+1;
@@ -76,10 +76,10 @@ console.log(
 //   console.log(
 //     `${count}`
 //   )
-  
+
 // },1000)
 
-document.getElementById('tForm').addEventListener('submit',function(e){
+document.getElementById('tForm').addEventListener('submit', function (e) {
   e.preventDefault();
   console.log(' 나 간닷!')
   console.log(this.tTextInput.value)
@@ -88,15 +88,15 @@ document.getElementById('tForm').addEventListener('submit',function(e){
   console.log(
     document.getElementById('textInput').value
   )
-  
+
 })
 
 
 document.getElementById('target').removeAttribute('class')
 console.clear();
 
-function getRandomInt(min,max){
-  return Math.floor(Math.random()* (max -min -1)) + min;
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min - 1)) + min;
 }
 
 // setInterval(()=>{
@@ -109,9 +109,9 @@ function getRandomInt(min,max){
 var abc = 20
 console.log(
 
-  (abc > 30)
-  ?"Small"
-  :"Big"
+  (abc > 30) ?
+  "Small" :
+  "Big"
 
 )
 
@@ -119,10 +119,10 @@ var a = 1;
 var b = "2";
 
 
-if(+a > +b){
- console.log('파싱 후 계산1')
-}else{
-  console.log(typeof +b)
+if (+a > +b) {
+  console.log('파싱 후 계산1')
+} else {
+  console.log(typeof + b)
   console.log('파싱 후 계산2')
 }
 
@@ -132,13 +132,13 @@ console.log(
 var date = new Date();
 var hours = date.getHours();
 
-if(hours <10){
+if (hours < 10) {
   console.log('굿모닝')
-}else if ( hours > 10 && hours < 18){
+} else if (hours > 10 && hours < 18) {
   console.log('굿 에프터눈')
-}else if(hours > 18 && hours < 24){
+} else if (hours > 18 && hours < 24) {
   console.log('굿 이브닝')
-}else{
+} else {
   console.log(' 자라 ')
 }
 
@@ -146,38 +146,49 @@ console.clear();
 
 let day = date.getDay();
 
-switch(day){
+switch (day) {
   case 0:
-  case 6:{
-    console.log('야호 주말이다!');
-    break;
-  }
+  case 6:
+    {
+      console.log('야호 주말이다!');
+      break;
+    }
   case 4:
-  case 5:{
-    console.log('야호 곧 주말이다!');
-    break;
-  }
-  default:{
-    console.log('으 평일');
-    break;
-  } 
+  case 5:
+    {
+      console.log('야호 곧 주말이다!');
+      break;
+    }
+  default:
+    {
+      console.log('으 평일');
+      break;
+    }
 }
 
-var food = ["비빔면","삼겹살","JMT 조합","또 먹어야지!"];
+var food = ["비빔면", "삼겹살", "JMT 조합", "또 먹어야지!"];
 
-for(var i = 0,len = food.length, cons ="" ; i < len; i ++){
-  cons += food[i]+"\n";
+for (var i = 0, len = food.length, cons = ""; i < len; i++) {
+  cons += food[i] + "\n";
 }
 
 console.log(cons);
 
 console.clear();
-var obj = {비빔면:3800,삼겹살:"3200",JMT:'존맛탱'};
-var lista = {아메리카노:3200,카페모카:5200,딸기스무디:6200}
-var coffee =[];
+var obj = {
+  비빔면: 3800,
+  삼겹살: "3200",
+  JMT: '존맛탱'
+};
+var lista = {
+  아메리카노: 3200,
+  카페모카: 5200,
+  딸기스무디: 6200
+}
+var coffee = [];
 
-for( key in lista ){
-  coffee.push(key) 
+for (key in lista) {
+  coffee.push(key)
 }
 console.log(coffee)
 console.clear();
@@ -185,36 +196,38 @@ console.clear();
 // [[3],[3,4,6,4],['45245']]
 
 var coffeeList = {
-  list:[],
-  coffee:{
-    아메리카노:3200,
-    카페모카:2600,
-    얼그레이:6200,
-    고삼차:9900,
-    피콜로:8900
+  list: [],
+  coffee: {
+    아메리카노: 3200,
+    카페모카: 2600,
+    얼그레이: 6200,
+    고삼차: 9900,
+    피콜로: 8900
   }
 }
 
-for(key in coffeeList.coffee){
+for (key in coffeeList.coffee) {
   coffeeList.list.push(key)
 }
 console.log(coffeeList.list);
 console.clear();
 
 
-var arr = [[],["짱구","철수","영희","맹구","훈이"]];
+var arr = [
+  [],
+  ["짱구", "철수", "영희", "맹구", "훈이"]
+];
 // arr[1].filter((x,idx)=>(idx %2 === 0)?arr[0].push(x):true);
 
-arr[1].forEach((x,idx)=>{
-  (idx%2 == 0)
-  ?arr[0].push(x)
-  :true
+arr[1].forEach((x, idx) => {
+  (idx % 2 == 0) ?
+  arr[0].push(x): true
 });
 
 console.log(arr[0]);
 
 
-
+/*
 var game = confirm('야구게임 할래?');
 var answerLoop = true;
 
@@ -246,5 +259,51 @@ while(game){
       game = false;
       break;
     }
+  }
+}
+*/
+
+/**
+ * 6자리, 1부터 45, 중복 안댐
+ * 5번 자동하면은 5개가 자동으로
+ */
+
+console.clear();
+var agree = confirm('로또 시작하시겠습니까?');
+//자동으로만 
+if (agree) {
+  var isAuto = confirm('자동으로 하시겠습니까?');
+
+  if (isAuto) {
+    let autoNumArr = [];
+    let autoLoop = 0;
+    for (; agree;) {
+      var count = prompt('몇장을 구매하시겠습니까?').trim();
+      if (isNaN(count)) {
+        alert('숫자를 입력해주세요!');
+        continue;
+      }
+
+      for (; autoLoop < count; autoLoop++) {
+        autoNumArr.push()
+        for (var insArr = []; i < 6;) {
+          let ran = Math.ceil(Math.random() * 45);
+          if (insArr.length == 6) { break;}
+          (!insArr.includes(ran)) ?
+          insArr.push(ran): true
+        }
+        autoNumArr.push((insArr))
+      }
+
+      autoNumArr.forEach(x => {
+        console.log(x.sort((x, y) => x - y))
+      })
+      alert('자동 출력이 완료 되었습니다!\n당첨 되었길 기원합니다!');
+      agree = false;
+    }
+
+    // 아래는 수동
+  } else {
+
   }
 }
