@@ -338,7 +338,7 @@ console.log(
 
 console.log(
   abc.find(x=> x>2)
-)
+);
 
 
 for(let i =1; i <=10; i++){
