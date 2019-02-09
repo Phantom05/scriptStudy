@@ -34,6 +34,9 @@
 + 27.배열 join,toString, forEach, map, filter, every,some, reduce, reduceRight, indexOf
 + 28.야구 게임 만들어보기
 + 29.로또 추출기 만들기
++ 30.전역번수, 지역변수, 스코프
++ 31.this사용법, use strict, 객체 내에서 this 이용해보기. 
++ 32.
 
 
 이터레이터, 함수호출, 클러스터 사용, 웹소켓 사용

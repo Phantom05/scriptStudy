@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #list{
+      display: inline-block;
+      width: 200px;
+    }
+  .testlist{
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0;
+    transition: .5s;
+    cursor: pointer;
+  }
+  .testlist:hover{
+    background: orange;
+    color: #fff;
+    transition: .5s;
+  }
+  </style>
+</head>
+
+<body>
+  <button id="getFruit">구매하기</button>
+
+  <form action="" id="addForm">
+    <input type="text" name="insertInput" autocomplete="off">
+    <button type="submit">추가</button>
+  </form>
+  <div id="list"></div>
+
+  <form action="" id="tForm">
+    <input type="text" name="tIn" id="fff" class="ff">
+    <input type="submit" id="tBt" value="클릭">
+  </form>
+  <script src="./2.js"></script>
+</body>
+
+</html>

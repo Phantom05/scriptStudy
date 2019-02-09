@@ -294,7 +294,6 @@ if (agree) {
         }
         autoNumArr.push((insArr))
       }
-
       autoNumArr.forEach(x => {
         console.log(x.sort((x, y) => x - y))
       })
@@ -307,3 +306,4 @@ if (agree) {
 
   }
 }
+console.clear();
