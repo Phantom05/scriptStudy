@@ -21,7 +21,6 @@ document.getElementById('reportForm').addEventListener('submit', function (e) {
     alert('세개의 칸 모두를 입력해 주세여.')
   }else{
 
-
     let li = document.createElement('li');
     li.classList.add('list__li');
   
@@ -46,7 +45,6 @@ document.getElementById('reportForm').addEventListener('submit', function (e) {
 
     let listAmount = document.getElementsByClassName('list__li');
     let listTowerHeight =  listAmount[0].clientHeight*10;
-
     document.getElementById('list').style.height = listTowerHeight+'px';
 
 
@@ -61,7 +59,7 @@ document.getElementById('reportForm').addEventListener('submit', function (e) {
 // cutomer__list_box 스크롤 하이를 box에 맞춰서
 /**
  * 
- *     if(listIdx ==0){
+ *  if(listIdx ==0){
       let amtDiv = document.createElement('div');
       amtDiv.classList.add('amountList');
       this.append(amtDiv);
