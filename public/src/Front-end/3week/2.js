@@ -37,4 +37,39 @@ function testFac(n){
   testFac(n-1)
 }
 
-testFac(10)
+testFac(10);
+
+var n = 2;
+if( n> 0){
+  console.log(n+" is positive.")
+}
+
+{
+  let sum = 10;
+}
+var sym1 = Symbol('하트');
+console.log(sym1)
+var sym2 = Symbol.for('club');
+console.log(sym2);
+
+var abc ={
+  gg:1,
+  gg2:22,
+  gg3:3
+}
+
+for(key in abc){
+  console.log(abc[key])
+}
+
+var parameter ={
+  x:0,
+  y:5,
+  vx:150
+}
+function ggg(p){
+  p.x = 10;
+  console.log(p)
+}
+ggg(parameter)
+console.log(parameter)
