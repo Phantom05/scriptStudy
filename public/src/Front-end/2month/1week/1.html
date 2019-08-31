@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./1.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="container">
+      <form id="reportForm" class="reportForm" action="www.naver.com" method="POST">
+        <h1 class="report__title">보고서</h1>
+        <hr class="report__line">
+        <div class="report__input_box">
+          <div class="report__input_con">
+            <input type="text" id="name" autocomplete="off" name="name" class="report__input" placeholder="Name" value="홍길동">
+          </div>
+          <div class="report__input_con">
+            <input type="text" id="address" autocomplete="off" name="address" class="report__input" placeholder="address"
+              value="강남구 행복빌딩">
+          </div>
+          <div class="report__input_con">
+            <input type="text" id="email" autocomplete="off" name="email" class="report__input" placeholder="Email"
+              value="sfsf@wefwef.com">
+          </div>
+          <div class="report__input_con">
+            <input type="submit" value="등록" class="report__input report__input_bt">
+          </div>
+        </div>
+      </form>
+
+      <div id="list" class="cutomer__list_box">
+        <div class="list__title">
+          <div class="list__box">이름</div>
+          <div class="list__box">주소</div>
+          <div class="list__box">이메일</div>
+        </div>
+
+        <div id="listInner">
+          <ul class="list__ul" id="listTower"></ul>
+        </div>
+        
+      </div>
+      
+      <div class="amountList">
+        <div class="amount__title">총계 : <span class="amount__bd">12명</span></div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./1.js"></script>
+</body>
+
+</html>

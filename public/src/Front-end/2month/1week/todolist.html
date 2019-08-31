@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./todolist.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="container">
+      <div class="todo__box">
+        <div class="todo__header">
+          <h1 class="todo__title_box">
+            <div class="todo__title_sub">Today's</div>
+            <div class="todo__title_txtodo todo__title_tx">TODO</div>
+            <div class="todo__title_txlist todo__title_tx">LIST</div>
+          </h1>
+        </div>
+        <div class="todo__body">
+          <div class="todo__list_makerbox">
+            <form action="" id="todoWriteForm">
+                <input type="text" class="todo__write_input" name="todoWriteInput" autocomplete="off">
+                <button type="submit" class="todo__write_bt">작성하기</button>
+            </form>
+          </div>
+
+          <div class="todo__list_con" id="todoCon">
+              <ul class="todo__list_ul" id="todoTower">
+                  <li class="todo__list_li todo__list_chk">
+                    <div class="todo__list_box">
+                      <input type="checkbox" class="todo__checkbox"> 장보러 가기
+                    </div>
+                    <span class="todo__list_delbt">x</span>
+                  </li>
+
+
+                  <li class="todo__list_li">
+                    <div class="todo__list_box">
+                      <input type="checkbox"> 
+                      장보러 가기장보러 가기장보러 가기장보러 가기장보러 가기장보러 가기장보러 가기장보러 가기장보러 가기장보러 가기장보러 가기장보러 가기
+                    </div>
+                    <span class="todo__list_delbt">x</span>
+                  </li>
+                  <li class="todo__list_li">
+                    <div class="todo__list_box">
+                      <input type="checkbox"> 장보러 가기
+                    </div>
+                    <span class="todo__list_delbt">x</span>
+                  </li>
+                  <li class="todo__list_li">
+                    <div class="todo__list_box">
+                      <input type="checkbox"> 장보러 가기
+                    </div>
+                    <span class="todo__list_delbt">x</span>
+                  </li>
+                  <li class="todo__list_li">
+                    <div class="todo__list_box">
+                      <input type="checkbox"> 장보러 가기
+                    </div>
+                    <span class="todo__list_delbt">x</span>
+                  </li>
+                </ul>
+      
+          </div>
+
+
+
+        </div>
+        <div class="todo__footer">
+          <span class="todo__footer_tx">@ Let's do it!</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./todolist.js"></script>
+
+</body>
+
+</html>

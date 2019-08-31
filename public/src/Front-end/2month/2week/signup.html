@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="./signup.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="">
+
+      <form action="" id="signupForm" class="signup__form">
+        <h2 class="signup__title">SIGN UP</h2>
+        <label class="signup__labal" for="username">
+          Name :
+        </label>
+        <div>
+          <input type="text" class="signup__input" name="username" id="username" autocomplete="off" autofocus>
+        </div>
+        <label class="signup__labal" for="Address">
+          Address :
+        </label>
+        <div>
+          <input type="text" class="signup__input" name="Address" id="Address" autocomplete="off" autofocus>
+        </div>
+        <label for="password" class="signup__labal">
+          Password :
+        </label>
+        <div>
+          <input type="password" class="signup__input" name="password" id="password">
+        </div>
+        <label for="" class="signup__labal">
+          Gender :
+        </label>
+        <div class="signup__left_box">
+          <input type="radio" class="gender__radio" id="genderMan" name="gender" value="man">
+          <label for="genderMan">Male</label>
+          <input type="radio" class="gender__radio" id="genderWomman" name="gender" value="woman">
+          <label for="genderWomman" >Female</label>
+        </div>
+        <label for="birth" class="signup__labal">
+            BirthDay :
+        </label>
+        <div class="signup__left_box">
+          <select name="birthYears" id="signupBirthYears"></select>
+          <label for="">년</label>
+          <select name="birthMonth" id="signupBirthMonth"></select>
+          <label for="">월</label>
+          <select name="birthDate" id="signupBirthDate"></select>
+          <label for="">일</label>
+        </div>
+        <label class="signup__labal">
+            Favorite :
+        </label>
+        <div class="favor_con">
+          <div class="faver_box">
+            <input type="checkbox"  class="favor__checkbox" id="favorCoding" name="favorCoding" value="Coding"><label for="favorCoding">Coding</label>
+          </div>
+          <div class="faver_box">
+            <input type="checkbox" class="favor__checkbox" id="favorExer" name="favorExer" value="Exercise"><label for="favorExer">Exercise</label>
+          </div>
+          <div class="faver_box">
+            <input type="checkbox" class="favor__checkbox" id="favorMovie" name="favorMovie" value="Movie"><label for="favorMovie">Movie</label>
+          </div>
+          <div class="faver_box">
+            <input type="checkbox" class="favor__checkbox" id="favorShop" name="favorShop" value="Shopping"><label for="favorShop">Shopping</label>
+          </div>
+          <div class="faver_box">
+            <input type="checkbox" class="favor__checkbox" id="favorTraval" name="favorTraval" value="Traval"><label for="favorTraval">Traval</label>
+          </div>
+        </div>
+        <div>
+          <button type="submit" class="signup__bt">OK</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./db.js"></script>
+  <script src="./signup.js"></script>
+</body>
+
+</html>

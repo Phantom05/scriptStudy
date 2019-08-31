@@ -1,0 +1,135 @@
+*{padding: 0;margin: 0; list-style: none;box-sizing: border-box;}
+
+.wrap{
+  width: 800px;
+  margin: auto;
+}
+.container{
+  margin-top: 50px;
+  padding: 15px;
+}
+.todo__box{
+  width: 400px;
+  margin: auto;
+  border: 1px solid blue;
+  box-shadow: 5px 5px 10px #c7c7c7;
+  border: 1px solid #ececec;
+  padding: 15px;
+}
+.todo__title_sub{
+  color: rgb(82, 184, 243);
+  letter-spacing: -1px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.todo__title_txtodo{
+  color: orange;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.todo__title_txlist{
+  color: skyblue;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.todo__title_tx{
+  font-weight: bold;
+  letter-spacing: -1px;
+  font-size: 70px;
+  line-height: 55px;
+}
+.todo__header{
+  text-align: center;
+}
+.todo__body{
+  padding: 15px 0;
+}
+.todo__list_con{
+  padding: 10px 0;
+}
+.todo__list_makerbox{
+
+}
+.todo__write_input{
+  display: inline-block;
+  width: calc(100% - 100px);
+  padding: 5px 0;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  outline: none;
+}
+.todo__write_bt{
+  display: inline-block;
+  width: 90px;
+  padding: 5px 0;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  outline: none;
+}
+.todo__write_bt:hover{
+  background: rgb(105, 183, 207);
+  color: #fff;
+  transition: .5s;
+}
+.todo__list_ul{
+
+}
+.todo__nolist{
+  text-align: center;
+  font-size: 14px;
+  color: #c7c7c7;
+}
+.todo__list_li{
+  position: relative;
+  border-bottom: 1px solid #ececec;
+  cursor: pointer;
+  transition: .2s;
+}
+.todo__list_li:hover{
+  background: rgba(214, 214, 214, 0.5);
+  transition: .2s;
+}
+.todo__list_li:last-child{
+  border: 0;
+}
+.todo__list_chk{
+  color: #c2c2c2;
+  text-decoration:line-through;
+}
+.todo__list_delbt{
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(184, 32, 32);
+  opacity: 0;
+  transition: .2s;
+}
+.todo__list_li:hover .todo__list_delbt{
+  opacity: 1;
+  transition: .2s;
+}
+.todo__checkbox{
+  margin-right: 5px;
+}
+
+.todo__list_box{
+  width: 90%;
+  padding: 5px 0;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
+
+
+
+
+
+.todo__footer{
+  padding: 10px 0;
+  text-align: right;
+  border-top: 2px dashed skyblue;
+}
+.todo__footer_tx{
+  font-size: 14px;
+  color: powderblue;
+}
